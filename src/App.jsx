@@ -8,9 +8,13 @@ export default function App() {
   return (
     <>
       <Encabezado />
+      <hr />
       <Navegacion />
+      <hr />
       <Sobre />
+      <hr />
       <Trabajos />
+      <hr />
       <Pie />
     </>
   );
