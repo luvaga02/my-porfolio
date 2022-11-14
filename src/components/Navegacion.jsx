@@ -1,10 +1,47 @@
+import { Link } from "react-scroll";
 export default function Navegacion() {
   return (
-    <div className="bg-slate-400 flex flex-wrap gap-4 sticky top-0 py-4">
-        <h2>Home</h2>
-        <h2>Sobre</h2>
-        <h2>Portafolio</h2>
-        <h2>Contacto</h2>
+    <div className="bg-black text-white flex flex-wrap gap-4 sticky top-0 ">
+      <Link
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        className="hover:bg-gray-400 py-4 px-2 cursor-pointer "
+      >
+        Home
+      </Link>
+      <Link
+        to="sobre"
+        spy={true}
+        smooth={true}
+        offset={-55}
+        duration={500}
+        className="hover:bg-gray-400 py-4 px-2 cursor-pointer "
+      >
+        Sobre
+      </Link>
+      <Link
+        to="trabajos"
+        spy={true}
+        smooth={true}
+        offset={-55}
+        duration={500}
+        className="hover:bg-gray-400 py-4 px-2 cursor-pointer "
+      >
+        Portafolio
+      </Link>
+      <Link
+        to="pie"
+        spy={true}
+        smooth={true}
+        offset={-55}
+        duration={500}
+        className="hover:bg-gray-400 py-4 px-2 cursor-pointer "
+      >
+        Contacto
+      </Link>
     </div>
   );
 }

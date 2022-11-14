@@ -6,7 +6,7 @@ export default function Pie() {
     console.log("submit contacto");
   }
   return (
-    <div>
+    <div id="pie" className="min-h-screen">
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Nombre" required/>
         <input type="email" placeholder="email" required/>
