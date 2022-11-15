@@ -11,8 +11,8 @@ export default function App() {
   return (
     <>
       <Encabezado idioma = {idioma} setIdioma={setIdioma}/>
-      <Navegacion />
-      <Sobre />
+      <Navegacion idioma = {idioma}/>
+      <Sobre idioma = {idioma}/>
       <Trabajos />
       <Pie />
     </>

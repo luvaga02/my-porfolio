@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-export default function Navegacion() {
+export default function Navegacion({ idioma = "es"}) {
   return (
     <div className="bg-black text-white flex flex-wrap gap-4 sticky top-0 z-10">
       <Link
@@ -10,7 +10,7 @@ export default function Navegacion() {
         duration={500}
         className="hover:bg-gray-400 py-4 px-2 cursor-pointer "
       >
-        Home
+        {idioma === "es" ? "Inicio": "Home" }
       </Link>
       <Link
         to="sobre"
@@ -20,7 +20,7 @@ export default function Navegacion() {
         duration={500}
         className="hover:bg-gray-400 py-4 px-2 cursor-pointer "
       >
-        Sobre
+        {idioma === "es" ? "Sobre": "About" }
       </Link>
       <Link
         to="trabajos"
@@ -30,7 +30,7 @@ export default function Navegacion() {
         duration={500}
         className="hover:bg-gray-400 py-4 px-2 cursor-pointer "
       >
-        Portafolio
+        {idioma === "es" ? "Portafolio": "Portfolio" }
       </Link>
       <Link
         to="pie"
@@ -40,7 +40,7 @@ export default function Navegacion() {
         duration={500}
         className="hover:bg-gray-400 py-4 px-2 cursor-pointer "
       >
-        Contacto
+        {idioma === "es" ? "Contacto": "Contact" }
       </Link>
     </div>
   );
