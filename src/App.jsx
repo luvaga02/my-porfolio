@@ -3,11 +3,14 @@ import Navegacion from "./components/Navegacion";
 import Pie from "./components/Pie";
 import Sobre from "./components/Sobre";
 import Trabajos from "./components/Trabajos";
+import { useState } from "react";
 
 export default function App() {
+  const [idioma, setIdioma] = useState("es");
+
   return (
     <>
-      <Encabezado />
+      <Encabezado idioma = {idioma} setIdioma={setIdioma}/>
       <Navegacion />
       <Sobre />
       <Trabajos />

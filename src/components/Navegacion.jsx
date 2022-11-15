@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 export default function Navegacion() {
   return (
-    <div className="bg-black text-white flex flex-wrap gap-4 sticky top-0 ">
+    <div className="bg-black text-white flex flex-wrap gap-4 sticky top-0 z-10">
       <Link
         to="home"
         spy={true}
