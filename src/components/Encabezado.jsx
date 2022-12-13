@@ -35,9 +35,9 @@ export default function Encabezado({ idioma, setIdioma }) {
               smooth={true}
               offset={-55}
               duration={500}
-              className="transition-colors delay-150 border-white border-2 hover:text-black hover:bg-white cursor-pointer p-2"
+              className="transition-colors delay-150 border-white border-2 hover:text-black hover:bg-white cursor-pointer p-2 "
             >
-              {idioma === "es" ? t3Es : t3En} <span className="">&#8594;</span>
+              {idioma === "es" ? t3Es : t3En} <span>&#8594;</span>
             </Link>
           </div>
         </div>
